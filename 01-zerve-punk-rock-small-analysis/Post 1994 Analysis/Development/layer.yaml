@@ -1,0 +1,115 @@
+id: 82db19c6-af88-4df7-adbf-894e79367412
+name: Development
+type: 1
+canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+blocks:
+- auto_size: false
+  canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+  compute_settings: null
+  description: Compares descriptive statistics (duration, loudness, tempo, popularity)
+    for classic punk rock tracks before and after 2020, revealing limited post-COVID
+    data (5 tracks) for robust analysis.
+  height: 1000
+  id: 026ec0d8-5a8b-4843-a837-78b0db90e533
+  layer_id: 82db19c6-af88-4df7-adbf-894e79367412
+  name: punk_pre_post_covid_stats
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 1500
+- auto_size: false
+  canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+  compute_settings: null
+  description: "Inspects classic punk rock dataset: displays schema info, null counts,\
+    \ and summary statistics for 789 tracks across 18 audio features and metadata\
+    \ columns\u2014all fields complete with no missing values."
+  height: 1000
+  id: 1fadfbed-3b41-45c1-b4aa-d8bbc98ec56a
+  layer_id: 82db19c6-af88-4df7-adbf-894e79367412
+  name: data_inspection_analysis
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 1000
+- auto_size: false
+  canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+  compute_settings: null
+  description: Loads a CSV file containing classic punk rock data into a pandas DataFrame
+    with 789 rows and 18 columns, then displays the first 5 rows for preview.
+  height: 1000
+  id: 39c4aa2a-1ebf-4690-a733-fb0e4cbcca0e
+  layer_id: 82db19c6-af88-4df7-adbf-894e79367412
+  name: load_csv_to_dataframe
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 500
+- auto_size: false
+  canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+  compute_settings: null
+  description: Compares punk music characteristics (tempo and loudness) before and
+    after 1994, calculating descriptive statistics to analyze the genre's evolution
+    around a peak popularity year.
+  height: 1000
+  id: e38375de-555d-4724-a25c-f018a2644f00
+  layer_id: 82db19c6-af88-4df7-adbf-894e79367412
+  name: analyze_punk_music_pre_post_death
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 2000
+- auto_size: false
+  canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+  compute_settings: null
+  description: Compares punk rock popularity before and after 1994 using Spotify data,
+    visualizing the distribution with a box plot to show that post-1994 punk music
+    has higher popularity scores than pre-1994 releases.
+  height: 1000
+  id: f85ed36c-c4e5-4d4d-97d3-f52c11a5281a
+  layer_id: 82db19c6-af88-4df7-adbf-894e79367412
+  name: punk_popularity_comparison
+  parent_id: null
+  properties: {}
+  status: 1
+  type: 1
+  variables: null
+  width: 1600
+  x: 0
+  y: 2500
+edges:
+- canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+  id: 4ff686e3-0b28-4c5a-b408-d8aae99cd73c
+  layer_id: 82db19c6-af88-4df7-adbf-894e79367412
+  source: 1fadfbed-3b41-45c1-b4aa-d8bbc98ec56a
+  target: 026ec0d8-5a8b-4843-a837-78b0db90e533
+- canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+  id: 9a59ddb3-d20b-4cb4-b071-741b4f0f1205
+  layer_id: 82db19c6-af88-4df7-adbf-894e79367412
+  source: 39c4aa2a-1ebf-4690-a733-fb0e4cbcca0e
+  target: 1fadfbed-3b41-45c1-b4aa-d8bbc98ec56a
+- canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+  id: b08e4ade-0f6b-45d9-a51e-77d2235e10b5
+  layer_id: 82db19c6-af88-4df7-adbf-894e79367412
+  source: 026ec0d8-5a8b-4843-a837-78b0db90e533
+  target: e38375de-555d-4724-a25c-f018a2644f00
+- canvas_id: d5488435-7683-4fa7-94f9-82644e7412e2
+  id: b1444cf9-cf54-478b-884f-f2363910ae88
+  layer_id: 82db19c6-af88-4df7-adbf-894e79367412
+  source: e38375de-555d-4724-a25c-f018a2644f00
+  target: f85ed36c-c4e5-4d4d-97d3-f52c11a5281a
